@@ -1,0 +1,7 @@
+module.exports = {
+  MAIL_HOST: process.env.MAIL_HOST,
+  MAIL_USER: process.env.MAIL_USER,
+  MAIL_PASSWORD: process.env.MAIL_PASSWORD,
+  NOTIFY_USER_EMAIL: process.env.NOTIFY_USER_EMAIL,
+  REDIS_CONNECTION_STRING: process.env.REDIS_CONNECTION_STRING,
+};
