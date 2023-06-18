@@ -7,6 +7,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      MAIL_HOST: ${{ secrets.MAIL_HOST }}
+      MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+      MAIL_USER: ${{ secrets.MAIL_USER }}
+      NOTIFY_USER_EMAIL: ${{ secrets.NOTIFY_USER_EMAIL }}
+      REDIS_CONNECTION_STRING: ${{ secrets.REDIS_CONNECTION_STRING }}
+      SENTINEL_PAGE_CONFIG: ${{ secrets.SENTINEL_PAGE_CONFIG }}
 
     steps:
       - uses: actions/checkout@v3
