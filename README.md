@@ -6,6 +6,8 @@ A JavaScript automation script which leverages the use of GitHub actions and not
 
 1. Fork this repository
 
+haylow
+
 2. Configure the following repository secrets:-
 
     - MAIL_HOST - The SMTP host of your email provider
