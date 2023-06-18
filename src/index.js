@@ -28,7 +28,7 @@ const pages = process.env.SENTINEL_PAGE_CONFIG ? JSON.parse(process.env.SENTINEL
       const html = await axios.get(page.url).then(({ data }) => data);
       for (const content of page.content) {
         const hash = `${prefix}${uuidv5(`${page.url}-${content}`, uuidv5.URL)}`;
-        if (html.includes(content)) {
+        if (html.toLowerCase().includes(content.toLowerCase())) {
           if (notified.includes(hash)) return;
           pipeline.set(hash, true);
           changes[page.name] = changes[page.name] ? [...changes[page.name], content] : [content];
