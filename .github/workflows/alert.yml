@@ -2,7 +2,7 @@ name: Sentinel Alerts
 
 on:
   schedule:
-     - cron: '* */4 * * *'
+     - cron: '0 0 * * *'
 
 jobs:
   build:

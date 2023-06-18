@@ -56,6 +56,6 @@ const pages = process.env.SENTINEL_PAGE_CONFIG ? JSON.parse(process.env.SENTINEL
             `,
     });
   }
-
   await pipeline.exec();
+  process.exit(0);
 })();
