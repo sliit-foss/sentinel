@@ -5,7 +5,7 @@ on:
      - cron: '0 0 * * *'
 
 jobs:
-  build:
+  alert:
     runs-on: ubuntu-latest
     env:
       MAIL_HOST: ${{ secrets.MAIL_HOST }}

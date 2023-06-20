@@ -24,7 +24,7 @@ A JavaScript automation script which leverages the use of GitHub actions and not
             "url": "https://www.example.org/careers",
             "content": [
                 "Sofware Engineer",
-                "Full Stack Engineer",
+                "Full Stack Engineer"
             ]
         }
     ]
